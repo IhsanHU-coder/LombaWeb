@@ -54,6 +54,31 @@
     <div class="lupa-kata-sandi">Lupa Kata Sandi?</div>
   </div>
 
+  <script>
+  const usernameInput = document.querySelector('.nama');
+  const passwordInput = document.querySelector('.kata-sandi');
+
+  const usernameBox = document.querySelector('.Username');
+  const passwordBox = document.querySelector('.Password');
+
+  usernameInput.addEventListener('focus', () => {
+    usernameBox.style.borderColor = 'red';
+  });
+
+  usernameInput.addEventListener('blur', () => {
+    usernameBox.style.borderColor = '#ffcc00'; // kembali ke kuning
+  });
+
+  passwordInput.addEventListener('focus', () => {
+    passwordBox.style.borderColor = 'red';
+  });
+
+  passwordInput.addEventListener('blur', () => {
+    passwordBox.style.borderColor = '#ffcc00'; // tetap kuning saat blur
+  });
+</script>
+
+
   
   
 </body>
