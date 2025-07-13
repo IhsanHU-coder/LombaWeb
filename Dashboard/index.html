@@ -226,6 +226,21 @@
       ellipse2.classList.remove("selected");
     }
   }
+  document.querySelectorAll('input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="tel"]').forEach(input => {
+    input.addEventListener('input', () => {
+      const wrapper = input.closest('div[class^="frame-"]');
+      if (wrapper) {
+        wrapper.style.borderColor = '#dc143c'; // warna merah
+      }
+    });
+
+    input.addEventListener('blur', () => {
+      const wrapper = input.closest('div[class^="frame-"]');
+      if (wrapper && !input.value.trim()) {
+        wrapper.style.borderColor = '#ffcc00'; // kembali ke kuning jika kosong
+      }
+    });
+  });
 </script>
   
 </body>
