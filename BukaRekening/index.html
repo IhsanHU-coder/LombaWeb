@@ -71,25 +71,29 @@
           </div>
           <div class="tanggal-lahir">Tanggal Lahir</div>
           <div class="frame-5">
-            <img class="weui-arrow-outlined" src="weui-arrow-outlined0.svg" />
+            <!-- <img class="weui-arrow-outlined" src="weui-arrow-outlined0.svg" /> -->
             <input class="status-pernikahan" type="text" placeholder="Status Pernikahan" />
             <img
               class="fluent-mdl-2-away-status"
               src="fluent-mdl-2-away-status0.svg"
             />
+            <div class="div3">*</div>
+            
           </div>
           <div class="status-pernikahan2">Status Pernikahan</div>
           <div class="frame-7">
             <input class="nik" type="number" placeholder="NIK..." />
             <img class="octicon-number-16" src="octicon-number-160.svg" />
-            <div class="div4">*</div>
-            <div class="div4">*</div>
+            <div class="div3">*</div>
+            <!-- <div class="div4">*</div>
+            <div class="div4">*</div> -->
           </div>
           <div class="nik2">NIK</div>
           <div class="frame-8">
             <input class="pekerjaan-saat-ini" type="text" placeholder="Pekerjaan Saat Ini..." />
             <img class="fa-6-solid-school" src="fa-6-solid-school0.svg" />
-            <img class="weui-arrow-outlined2" src="weui-arrow-outlined1.svg" />
+            <!-- <img class="weui-arrow-outlined2" src="weui-arrow-outlined1.svg" /> -->
+            <div class="div3">*</div>
           </div>
           <div class="pekerjaan-saat-ini2">Pekerjaan Saat Ini</div>
           <div class="frame-9">
@@ -170,7 +174,7 @@
       ellipse2.classList.remove("selected");
     }
   }
-  document.querySelectorAll('input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="tel"]').forEach(input => {
+  document.querySelectorAll('input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="tel"], input[type="file"]').forEach(input => {
     input.addEventListener('input', () => {
       const wrapper = input.closest('div[class^="frame-"]');
       if (wrapper) {
