@@ -382,3 +382,18 @@
        margin: 0;
        padding: 0;
    }
+
+.bintang {
+  color: #dc143c;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 333px; /* Sama seperti .div di Password */
+  top: calc(50% - 6.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
