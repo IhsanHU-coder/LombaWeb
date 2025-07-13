@@ -213,8 +213,6 @@
   font-weight: 500;
   position: absolute;
   padding: 10px;
-  left: 47px;
-  top: calc(50% - 16px);
 }
 .material-symbols-person {
   width: 3000px;
@@ -268,8 +266,7 @@
   font-weight: 500;
   position: absolute;
   padding: 10px;
-  left: 50px;
-  top: calc(50% - 17px);
+
 }
 .fa-solid-hospital {
   width: 26.25px;
@@ -314,8 +311,6 @@
   font-weight: 500;
   position: absolute;
   padding: 10px;
-  left: 49px;
-  top: calc(50% - 16px);
 }
 .pixel-calender-solid {
   width: 24px;
@@ -1512,4 +1507,117 @@ a,
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ==== Input Frame Style (box kuning) ==== */
+.frame-33, .frame-2, .frame-3 {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 4px solid #ffcc00;
+  width: 400px;
+  height: 65px;
+  position: absolute;
+  left: calc(50% - 531px);
+  overflow: hidden;
+}
+
+/* ==== Input Text Style ==== */
+.nama-lengkap,
+.tempat-lahir,
+._00-00-0000 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+  padding-left: 45px; /* Beri ruang untuk icon */
+  width: 150%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* ==== Icon Style ==== */
+.material-symbols-person2,
+.fa-solid-hospital,
+.pixel-calender-solid {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 13px;
+  top: 20px;
+}
+
+/* ==== Tanda bintang merah ==== */
+.frame-2 .div,
+.frame-3 .div {
+  color: #dc143c;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  right: 13px;
+  top: calc(50% - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tambahan bintang untuk Nama Lengkap */
+.frame-33::after {
+  content: '*';
+  color: #dc143c;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  right: 13px;
+  top: calc(50% - 10px);
+}
+
+.div {
+  color: #dc143c;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 333px; /* Samakan dengan Username/Login style */
+  top: calc(50% - 6.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-symbols-person2,
+.fa-solid-hospital,
+.pixel-calender-solid {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+
+/* Fokus Nama Lengkap */
+.frame-33:has(.nama-lengkap:focus) {
+  border-color: #dc143c;
+  box-shadow: 0 0 5px rgba(220, 20, 60, 0.6);
+}
+
+/* Fokus Tempat Lahir */
+.frame-2:has(.tempat-lahir:focus) {
+  border-color: #dc143c;
+  box-shadow: 0 0 5px rgba(220, 20, 60, 0.6);
+}
+
+/* Fokus Tanggal Lahir */
+.frame-3:has(._00-00-0000:focus) {
+  border-color: #dc143c;
+  box-shadow: 0 0 5px rgba(220, 20, 60, 0.6);
 }
