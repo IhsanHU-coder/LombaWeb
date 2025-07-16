@@ -783,6 +783,23 @@ left: 570px;
   background: transparent;
 }
 
+/* Geser semua ellipse jangka waktu ke kiri */
+.ellipse-32 { left: 80px !important; }
+.ellipse-42 { left: 160px !important; }
+.ellipse-62 { left: 80px !important; }
+.ellipse-8  { left: 80px !important; }
+.ellipse-7  { left: 160px !important; }
+.ellipse-9  { left: 160px !important; }
+
+/* Geser semua label jangka waktu ke kiri */
+._1-h { left: 102px !important; }
+._5-h { left: 182px !important; }
+._1-w { left: 102px !important; }
+._1-y { left: 102px !important; }
+._1-m { left: 182px !important; }
+._10-y { left: 182px !important; }
+
+
 .waktu-ellipse.aktif .ellipse {
   background: red;
 }
