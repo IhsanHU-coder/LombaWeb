@@ -765,3 +765,30 @@ left: 570px;
 .ellipse-aktif {
   background: red;
 }
+
+
+.waktu-ellipse {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.waktu-ellipse .ellipse {
+  width: 18.66px;
+  height: 18.66px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.waktu-ellipse.aktif .ellipse {
+  background: red;
+}
+
+.waktu-ellipse .label {
+  font-size: 15px;
+  font-family: "Inter-Medium", sans-serif;
+  color: #000;
+}
